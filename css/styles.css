@@ -1,19 +1,47 @@
-/* Page Styles
-================================ */
+/* =====================================
+   Page Styles
+======================================== */
 
 * {
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 body {
-	font: normal 1em/1.5 sans-serif;
-	color: #222;
-	background-color: #edeff0;
+	font-size: 1.4em;
+	font-family: 'Varela Round', sans-serif;
+  font-weight: bold;
+	color: #6e859c;
+  padding: 0;
+  margin: 0;
+	background: #fff;
 }
-img {
-	border: solid 1px;
-	padding: 5px;
-}
+
+.img {
+		display:inline-block;
+	  color: #fff;
+	  padding: .85em;
+	  background: #fff;
+		transition: 1s;
+	}
+	.img img:hover {
+		filter: grayscale(100%);
+		transform: scale(1.1);
+	}
+
+	.searchbar{
+	   display:flex;
+	   justify-content: center;
+	}
+
+	#search{
+	   text-align: left;
+	   border:solid 3px rgb(170, 170, 170);
+	   border-radius:5px;
+	   padding:5px 5px;
+	   font-family:inherit;
+	   width:30vw;
+		 height: 50px;
+	}
+
 
 /* Main Layout Styles
 ================================ */
@@ -24,46 +52,10 @@ img {
 	background-color: #384047;
 }
 
-.main-footer {
+.main-footer, .main-header {
 	text-align: center;
 	margin-top: 30px;
 	padding-top: 5px;
 	padding-bottom: 5px;
- 	background-color: #b7c0c7;
+ 	background-color: black;
 }
-
-@media (min-width: 768px) {
-
-	/* Main Layout Styles
-	================================ */
-
-	body {
-		padding-top: 75px;
-	}
-	.main-header {
-		position: fixed;
-		top: 0;
-		width: 100%;
-	}
-
-  /* Grid
-================================ */
-
-.grid-container {
-	padding-left: 10px;
-	padding-right: 10px;
-	margin-left: auto;
-	margin-right: auto;
-}
-img {
-	width: 100%;
-}
-
-/* Media Queries
-================================ */
-
-@media (min-width: 1px) and (max-width: 767px)  {
-	.grid-container > [class^="grid-"] {
-		padding-top: 5px;
-		padding-bottom: 5px;
-	}
