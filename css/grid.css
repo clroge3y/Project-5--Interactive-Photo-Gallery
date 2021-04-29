@@ -2,13 +2,11 @@
    Grid Layout
 ======================================== */
 
-.grid {
+.gallery {
     max-width: 1000px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 40px;
-    grid-auto-rows: minmax(200px, auto);
-    grid-auto-columns: minmax(200px, auto);
     background: #fff;
     margin: 45px auto;
-}
+    padding-left: .85em;

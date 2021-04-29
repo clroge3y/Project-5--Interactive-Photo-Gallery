@@ -16,9 +16,7 @@ body {
 }
 
 .img {
-		display:inline-block;
 	  color: #fff;
-	  padding: .85em;
 	  background: #fff;
 		transition: 1s;
 	}
