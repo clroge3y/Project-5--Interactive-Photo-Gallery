@@ -6,8 +6,7 @@
     max-width: 1000px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-template-rows: 200px);
-    gap:40px;
+    gap: 40px;
     grid-auto-rows: minmax(200px, auto);
     grid-auto-columns: minmax(200px, auto);
     background: #fff;
